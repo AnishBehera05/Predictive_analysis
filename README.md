@@ -13,7 +13,6 @@ scikit-learn
 Usage
 Ensure that you have Python installed on your system along with the required libraries mentioned above.
 Place your Apple stock price data in a CSV file named data.csv. The CSV file should contain at least two columns: Date and Close representing the date and closing price of the stock, respectively.
-Run the Python script stock_price_prediction.py.
 Steps Performed in the Script
 Load the Apple stock price data from data.csv and preprocess it.
 Perform seasonal decomposition of the time series into trend, seasonal, and residual components using the multiplicative model.
