@@ -1,24 +1,70 @@
-Time Series Analysis and Stock Price Prediction with ARIMA
-Overview
-This Python script performs time series analysis and stock price prediction for Apple stock using the Autoregressive Integrated Moving Average (ARIMA) model. The script loads historical Apple stock price data from a CSV file, decomposes the time series into trend, seasonal, and residual components, fits an ARIMA model to the data, makes predictions, evaluates the model performance, and visualizes the results.
+**README**
 
-Requirements
-Python 3.x
-Required Python libraries:
-numpy
-pandas
-matplotlib
-statsmodels
-scikit-learn
-Usage
-Ensure that you have Python installed on your system along with the required libraries mentioned above.
-Place your Apple stock price data in a CSV file named data.csv. The CSV file should contain at least two columns: Date and Close representing the date and closing price of the stock, respectively.
-Steps Performed in the Script
-Load the Apple stock price data from data.csv and preprocess it.
-Perform seasonal decomposition of the time series into trend, seasonal, and residual components using the multiplicative model.
-Visualize the original time series along with its trend, seasonal, and residual components.
-Split the data into training and test sets.
-Fit an ARIMA model to the training data.
-Make predictions using the ARIMA model on the test set.
-Evaluate the performance of the ARIMA model using Mean Squared Error (MSE).
-Visualize the actual vs. predicted stock prices.
+**Stock Price Prediction Using Time Series Forecasting Models**
+
+This repository contains implementations of various time series forecasting models applied to predict Apple stock prices. The models include:
+
+1. Autoregressive Integrated Moving Average (ARIMA)
+2. Convolutional Neural Network (CNN)
+3. Long Short-Term Memory (LSTM)
+4. Support Vector Regression (SVR)
+
+**Dataset:**
+The dataset used in this project is provided in the `data.csv` file. It includes historical Apple stock prices with date-time information.
+
+**Dependencies:**
+To run the code in this repository, you need the following dependencies:
+
+- Python 3.x
+- NumPy
+- pandas
+- Matplotlib
+- scikit-learn
+- TensorFlow (for CNN and LSTM models)
+- Keras (for CNN and LSTM models)
+- Statsmodels (for ARIMA model)
+
+You can install the required dependencies using pip:
+
+```
+pip install -r requirements.txt
+```
+
+**Usage:**
+- Each model implementation is provided in a separate Python script.
+- Run each script to train and evaluate the corresponding model.
+- The evaluation includes the Mean Squared Error (MSE) metric to assess prediction accuracy.
+
+**How to Run:**
+1. Clone this repository to your local machine:
+
+```
+git clone https://github.com/yourusername/stock-price-prediction.git
+```
+
+2. Navigate to the cloned directory:
+
+```
+cd stock-price-prediction
+```
+
+3. Run the desired model script:
+
+```
+python arima_model.py
+python cnn_model.py
+python lstm_model.py
+python svr_model.py
+```
+
+**Contributing:**
+Contributions to this repository are welcome. If you have any suggestions, improvements, or additional models to add, feel free to submit a pull request.
+
+**License:**
+This project is licensed under the MIT License. Feel free to use and modify the code for your own purposes.
+
+**Acknowledgments:**
+The implementations in this repository are based on various tutorials, documentation, and research papers on time series forecasting and machine learning. Special thanks to the authors and contributors of these resources.
+
+**Disclaimer:**
+This project is for educational and research purposes only. Stock price prediction is inherently uncertain and should not be used as the sole basis for investment decisions. Always consult with a financial advisor before making investment choices.
